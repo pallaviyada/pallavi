@@ -1,40 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
 </head>
-
 <body>
-      <div class="main">
-            <h1>GeeksforGeeks</h1>
-            <h3>Enter your login credentials</h3>
-            <form action="">
-                  <label for="first">
-                        Username:
-                  </label>
-                  <input type="text" 
-                         id="first" 
-                         name="first" 
-                         placeholder="Enter your Username" required>
+    <h1>User Registration Form</h1>
 
-                  <label for="password">
-                        Password:
-                  </label>
-                  <input type="password"
-                         id="password" 
-                         name="password"
-                         placeholder="Enter your Password" required>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
 
-                  <div class="wrap">
-                        <button type="submit"
-                                onclick="solve()">
-                              Submit
-                        </button>
-                  </div>
-            </form>
-            <p>Not registered?
-                  <a href="#"
-                     style="text-decoration: none;">
-                        Create an account
-                  </a>
-            </p>
-      </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+        <label for="organization">Organization:</label>
+        <input type="text" id="organization" name="organization">
+        <br><br>
+
+        <label for="attendee-type">Attendee Type:</label>
+        <select id="attendee-type" name="attendee-type">
+            <option value="general">General</option>
+            <option value="vip">VIP</option>
+            <option value="speaker">Speaker</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Register">
+    </form>
 </body>
-
 </html>
